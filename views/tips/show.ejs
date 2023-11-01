@@ -6,7 +6,7 @@
   
 <br><br><h2>Comments</h2>
 <form id="add-comment-form" method="POST"
-  action="/tipss/<%= tip._id %>/comments">
+  action="/tips/<%= tip._id %>/comments">
   <label>Comment</label>
   <textarea name="content"></textarea>
   <input type="submit" value="Add Comment">
@@ -26,12 +26,12 @@
       <% let total = 0 %>
       <% tip.comments.forEach(function(c) { %>
         <tr>
-          <td class="comment-user"><img alt="avatar" src="<%= c.userAvatar %>" referrerpolicy="no-referrer" ><%= c.userName %></td>
+          <td class="comment-user"><img alt="avatar" src="<%= c.user.avatar %>" referrerpolicy="no-referrer" ><%= c.user.name %></td>
           <td><%= c.createdAt.toLocaleDateString() %></td>
           <td><%= c.content %></td>
           <td>
             <% if (user?._id.equals(c.user)) { %>
-              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+              <form action="/comments/<%= c._id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
               </form>
             <% } %>

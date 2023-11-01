@@ -13,6 +13,8 @@ router.get('/new', ensureLoggedIn, tipsCtrl.new);
 // POST /tips
 router.post('/', ensureLoggedIn, tipsCtrl.create);
 
+router.get('/:id', tipsCtrl.show);
+
 // DELETE /tips/:id
 // router.delete('/tips/:id', ensureLoggedIn, tipsCtrl.delete);
 

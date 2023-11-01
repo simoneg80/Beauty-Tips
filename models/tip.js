@@ -8,26 +8,18 @@ const commentSchema = new Schema({
     required: true,
   },
 
-  //   user: {
-  //     type: Schema.Types.ObjectId,
-  //     ref: 'User',
-  //     required: true
-  //   },
-  //   userName: String,
-  //   userAvatar: String
-  // }, {
-  //   timestamps: true
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },
+  }, {
+    timestamps: true
 });
 
 const tipsSchema = new Schema(
   {
     title: { type: String, required: true },
-    //   releaseYear: {
-    //     type: Number,
-    //     default: function() {
-    //       return new Date().getFullYear();
-    //     },
-    //   },
     comments: [commentSchema],
   },
   {
