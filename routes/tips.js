@@ -16,7 +16,7 @@ router.post('/', ensureLoggedIn, tipsCtrl.create);
 router.get('/:id', tipsCtrl.show);
 
 // DELETE /tips/:id
-// router.delete('/tips/:id', ensureLoggedIn, tipsCtrl.delete);
+router.delete('/tips/:id', ensureLoggedIn, tipsCtrl.delete);
 
 
 module.exports = router;

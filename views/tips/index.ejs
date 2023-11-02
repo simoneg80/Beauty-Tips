@@ -11,8 +11,14 @@
       <% tips.forEach(function(t) { %>
         <tr>
           <td><%= t.title %></td>
-          <td><%= t.releaseYear %></td>
+       
           <td><a href="/tips/<%= t._id %>">REPLY</a></td>
+          <td>
+            <form action="/tips/<%= t._id %>?_method=DELETE" method="POST">
+              <button type="submit">DELETE</button>
+            </form>
+            
+          </td>
         </tr>
         <% }); %>
       </tbody>

@@ -126,9 +126,14 @@ nav > a.active {
 }
 
 #new-form {
-  display: grid;
+  margin-top: 200px;
+  /* display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 22rem));
+  grid-template-columns: repeat(2, minmax(auto, 15rem)); */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
 
 #new-form *,
@@ -140,13 +145,16 @@ nav > a.active {
 }
 
 #new-form input[type="submit"] {
-  grid-column: span 2;
-  width: 10rem;
+  margin-top: 50px;
   margin-left: auto;
+  color: white;
+  background-color: black;
+ 
 }
 
 table {
   font-size: 20px;
+  margin-top: 200px;
 }
 
 table thead th {
