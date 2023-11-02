@@ -9,4 +9,10 @@ router.post('/tips/:id/comments', ensureLoggedIn, commentsCtrl.create);
 // DELETE /comments
 router.delete('/comments/:id', ensureLoggedIn, commentsCtrl.delete);
 
+// Update /comments
+router.put('/comments/:id', ensureLoggedIn, commentsCtrl.update);
+
+// Edit /comments
+router.get('/comments/:id/edit', ensureLoggedIn, commentsCtrl.edit);
+
 module.exports = router;

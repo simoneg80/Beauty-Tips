@@ -7,6 +7,8 @@ module.exports = {
   new: newTip,
   create,
   delete: deleteTip,
+  edit,
+  update: updateTip,
 };
 
 async function index(req, res) {
@@ -53,4 +55,18 @@ async function create(req, res) {
 async function deleteTip(req, res) {
   await Tip.findByIdAndDelete(req.params.id);
   res.redirect("/tips");
+}
+
+async function updateTip(req, res) {
+  const tip = await Tip.findById(req.params.id);
+  if (!tip.user.equals(req.user._id)) return res.redirect("/tips");
+  await Tip.findByIdAndUpdate(req.params.id, req.body, { new: true });
+  res.redirect("/tips");
+}
+
+async function edit(req, res) {
+  const tip = await Tip.findById(req.params.id);
+  console.log(tip);
+  if (!tip.user.equals(req.user._id)) return res.redirect("/tips");
+  res.render("tips/edit", { title: "Edit Tip", tip });
 }

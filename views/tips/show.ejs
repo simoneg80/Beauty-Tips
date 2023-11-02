@@ -27,7 +27,8 @@
       </tr>
     </thead>
     <tbody>
-      <% let total = 0 %> <% tip.comments.forEach(function(c) { %>
+      <% let total = 0 %> <% tip.comments.forEach(function(c) { %> <%let edit =
+      false %> <% if (edit === false) {%>
       <tr>
         <td class="comment-user">
           <img
@@ -45,8 +46,31 @@
           </form>
           <% } %>
         </td>
+        <td>
+          <button class="editBtn"><a href="/comments/<%=c._id%>/edit">Edit</a></button>
+        </td>
       </tr>
-      <% }); %>
+      <% } else { %>
+      <tr>
+        <td class="comment-user">
+          <img
+            alt="avatar"
+            src="<%= c.user.avatar %>"
+            referrerpolicy="no-referrer"
+          /><%= c.user.name %>
+        </td>
+        <td>
+          <form
+            id="edit-comment-form"
+            method="POST"
+            action="/comments/<%= c._id %>?_method=PUT"
+          >
+            <textarea name="content"><%= c.content %></textarea>
+            <input type="submit" value="Update" />
+          </form>
+        </td>
+      </tr>
+      <% } %> <% }); %>
       <tr>
         <td colspan="3"></td>
         <td>
