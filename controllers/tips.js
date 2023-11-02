@@ -40,7 +40,7 @@ async function create(req, res) {
   }
   try {
     // Update this line because now we need the _id of the new movie
-    const tip = await Tip.create(req.body);
+    const tip = await Tip.create({ ...req.body, user: req.user._id });
     // Redirect to the new movie's show functionality
     res.redirect(`/tips`);
   } catch (err) {
