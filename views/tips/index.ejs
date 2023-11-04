@@ -2,23 +2,34 @@
 <table id="list">
     <thead>
       <tr>
-        <th>Title</th>
-        <!-- <th>Release<br>Year</th> -->
+        <th>All</th>
+        <th>Discussions</th>
+        <th>Tips & Tricks!</th>
+        <th>Start a Convo!</th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <% tips.forEach(function(t) { %>
         <tr>
+          <td>
+            <img
+            alt="avatar"
+            src="<%= t.user.avatar %>"
+            referrerpolicy="no-referrer"
+          />
+           </td>
+          <td><%= t.user.name %></td>
           <td><%= t.title %></td>
        
           <td><a href="/tips/<%= t._id %>">REPLY</a></td>
+          <td><a href="/tips/<%= t._id %>/edit">EDIT</a></td>
           <td>
-            <form action="/tips/<%= t._id %>?_method=DELETE" method="POST">
+            <form class="form-delete"  action="/tips/<%= t._id %>?_method=DELETE" method="POST">
               <button type="submit">DELETE</button>
             </form>
           </td>
-          <td><a href="/tips/<%= t._id %>/edit">EDIT</a></td>
         </tr>
         <% }); %>
       </tbody>

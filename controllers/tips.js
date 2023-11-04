@@ -1,5 +1,5 @@
 const Tip = require("../models/tip");
-// const Performer = require('../models/performer');
+const User = require('../models/user');
 
 module.exports = {
   index,
@@ -12,8 +12,10 @@ module.exports = {
 };
 
 async function index(req, res) {
-  const tips = await Tip.find({});
+  const tips = await Tip.find({}).populate("user");
+  console.log(tips);
   res.render("tips/index", { title: "All Tips", tips });
+  
 }
 
 async function show(req, res) {

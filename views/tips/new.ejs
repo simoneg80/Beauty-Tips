@@ -1,12 +1,13 @@
 <%- include('../partials/header') %>
+<body class="newTipPg">
+  
 
+<section class="new-tip-pg">
 <form id="new-form" action="/tips" method="POST">
   <label>New Tip:</label>
   <input type="text" name="title">
-
-  <!-- <label>Now Showing:</label> -->
-  <!-- <input type="checkbox" name="nowShowing" checked> -->
   <input type="submit" value="Add Tip">
 </form>
-
+</section>
+</body>
 <%- include('../partials/footer') %>

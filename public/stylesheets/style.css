@@ -1,36 +1,6 @@
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-}
-
-.login img {
-  height: 30px;
-}
-
-.comment-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.comment-user img {
-  border-radius: 50%;
-  height: 40px;
-} */
 * {
   box-sizing: border-box;
-  /* font-family: Helvetica; */
+  font-family: open-sans;
   background-color: #f4efe4;
   color: #424748;
 
@@ -62,6 +32,7 @@ nav > img {
   background-color: transparent;
 }
 
+/* Home Page Title */
 .heading {
   margin-top: 75px;
   margin-left: 30px;
@@ -69,17 +40,17 @@ nav > img {
   font-size: 40px;
 }
 
-p {
-  margin: 0;
-}
 .home-img {
   margin-top: -580px;
   width: 100%;
 }
 
+/* Home Page P-text (sub-text) */
+p {
+  margin: 0;
+}
+
 .sub-text {
-  /* margin-right: auto;
-  margin-left: auto; */
   margin-top: -158px;
   font-size: 28px;
   text-align: center;
@@ -102,9 +73,9 @@ p {
   background-color: #e8eceb;
   padding: 20px;
   overflow-y: scroll;
-} */
+}
 
-/* body > main h1:first-child {
+body > main h1:first-child {
   margin-bottom: 50px;
 } */
 
@@ -126,55 +97,84 @@ nav > a.active {
 }
 
 #new-form {
-  margin-top: 200px;
-  /* display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 15rem)); */
+  /* margin-top: 200px; */
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: auto;
+  background-color: transparent; /* !!! change back to backgroun color if img does not work*/
+  
+ 
 }
 
 #new-form *,
-#add-comment-form *,
-#add-performer-form * {
+#add-comment-form * {
   font-size: 20px;
   padding: 5px;
   border-radius: 5px;
+  background-color: transparent; /* !!! change back to backgroun color if img does not work*/
+  
 }
+
+
 
 #new-form input[type="submit"] {
   margin-top: 50px;
   margin-left: auto;
   color: white;
   background-color: black;
- 
+
 }
+/* !!! look into how to add img to page background*/
+.new-tip-pg {
+  margin-top: 200px;
+  background-image: url("/images/newformImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0%;
+ 
+} 
+
+/* All Tips Table */
 
 table {
-  font-size: 20px;
-  margin-top: 200px;
+  font-size: 1.5vw;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+
 }
 
+#list {
+  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
 table thead th {
   padding: 5px;
-  border-bottom: 2px solid #424748;
+  border-bottom: 5px solid #000000;
+  
 }
 
-table td {
-  padding: 10px;
+#list td:nth-child(1),
+#list td:nth-child(2),
+#list td:nth-child(3),
+#list td:nth-child(4),
+#list td:nth-child(5),
+#list td:nth-child(6) {
+  min-width: 100px;
   text-align: center;
 }
 
-#list td:nth-child(2),
-#list td:nth-child(3) {
-  min-width: 100px;
-}
 
 #list a {
   border-radius: 4px;
-  background-color: #b8c0c2;
+  background-color: #000000;
+  color: white;
   padding: 4px;
   text-decoration: none;
   font-size: 14px;
@@ -184,22 +184,44 @@ table td {
   background-color: white;
 }
 
+td > a, button {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 4px;
+  }
+
+#form-delete {
+  margin: 0;
+}
+
+#list button:hover {
+  background-color: white;
+}
+
+
 #show-page {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 1rem;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+  /* grid-template-columns: auto auto;
+  grid-gap: 1rem; */
 }
 
 #show-page div:nth-child(even) {
   font-weight: bold;
 }
 
+
 #add-comment-form,
 #add-performer-form {
-  display: grid;
-  grid-template-columns: auto auto;
+ display: inline-block;
+  /*  grid-template-columns: auto auto;
   grid-gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; */
 }
 
 #add-comment-form input[type="submit"],
@@ -246,6 +268,7 @@ hr {
   justify-content: center;
   align-items: center;
   height: 34px;
+  text-decoration: none;
 }
 
 .login img {
@@ -262,21 +285,64 @@ button > .login {
 }
 #sign-up > {
   background-color: black;
-}
-
-button {
-  background-color: black;
-  margin-top: 20px;
-  color: white;
+  text-decoration: none;
 }
 
 .comment-user {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  height: 100%;
 }
 
 .comment-user img {
   border-radius: 50%;
   height: 40px;
 }
+
+.comment-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  width: 40vw;
+}
+
+.editBtn {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 13.333px;
+
+
+}
+
+#editCmt-page {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+} 
+
+
+#editCmt-page *,
+#add-comment-form * {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#editCmt-page input[type="submit"] {
+  margin-top: 50px;
+  margin-left: auto;
+  color: white;
+  background-color: black;
+ 
+}
+
