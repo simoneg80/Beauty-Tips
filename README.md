@@ -22,12 +22,12 @@ SEI-Project 2 Web Application
 <img width="1433" alt="Project-2 comment page " src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/181e06ee-1a87-4ccc-b0cb-70057b2010aa">
 
 ## Technologies Used
-  HTML
-  CSS
-  Express
-  MongoDB
-  Mongoose
-  OAuth Authentication
+* HTML
+* CSS
+* Express
+* MongoDB
+* Mongoose
+* OAuth Authentication
 
 ## Challenging Code
 <img width="1440" alt="Code Challenge " src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/6734e12e-9650-4cfd-9df8-ace6c4654c7c">
@@ -35,10 +35,10 @@ SEI-Project 2 Web Application
 ## Game Link
 
 ## Next Steps
-  *Like Feauture 
-  *Enhanced styling and animations
-  *Functionality to save comments or topics
-  *Store feature
+* Like Feauture 
+* Enhanced styling and animations
+* Functionality to save comments or topics
+* Store feature
 
 ## The MIT License (MIT)
 Copyright (c) 2023 Simone Green
