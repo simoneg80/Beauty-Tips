@@ -5,7 +5,7 @@
         <th>All</th>
         <th>Discussions</th>
         <th>Tips & Tricks!</th>
-        <th>Start a Convo!</th>
+        <th class="animate__shakeX">Start a Convo!</th> 
         <th></th>
         <th></th>
       </tr>
@@ -14,7 +14,7 @@
       <% tips.forEach(function(t) { %>
         <tr>
           <td>
-            <img
+            <img id="avatar"
             alt="avatar"
             src="<%= t.user.avatar %>"
             referrerpolicy="no-referrer"

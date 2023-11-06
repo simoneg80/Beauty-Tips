@@ -36,6 +36,7 @@ nav > img {
   margin-left: 30px;
   font-family: "Comfortaa";
   font-size: 40px;
+  
 }
 
 .home-img {
@@ -53,7 +54,22 @@ p {
   font-size: 28px;
   text-align: center;
   font-family: "Open-Sans";
+  animation: bounce; 
+  animation-duration: 2s; 
 }
+
+
+
+#avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+}
+
+
 
 .footer {
   display: flex;
@@ -63,19 +79,11 @@ p {
   align-items: center;
 }
 
-/* body > main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e8eceb;
-  padding: 20px;
-  overflow-y: scroll;
-}
+.animate__shakeX {
+  animation: shakeX; 
+  animation-duration: 2s; 
 
-body > main h1:first-child {
-  margin-bottom: 50px;
-} */
+}
 
 nav > a {
   margin: 20px;
@@ -101,7 +109,9 @@ nav > a.active {
   flex-direction: column;
   width: 50%;
   margin: auto;
-  background-color: transparent; /* !!! change back to backgroun color if img does not work*/
+  background-color: transparent; 
+  animation: bounce; 
+  animation-duration: 2s; 
 }
 
 #new-form *,
@@ -196,8 +206,6 @@ button {
   flex-direction: column;
   align-items: center;
   font-size: xx-large;
-  /* grid-template-columns: auto auto;
-  grid-gap: 1rem; */
 }
 
 #show-page div:nth-child(even) {
@@ -207,9 +215,6 @@ button {
 #add-comment-form,
 #add-performer-form {
   display: inline-block;
-  /*  grid-template-columns: auto auto;
-  grid-gap: 1rem;
-  margin-bottom: 2rem; */
 }
 
 #add-comment-form input[type="submit"],
@@ -329,3 +334,5 @@ button > .login {
   color: white;
   background-color: black;
 }
+
+
