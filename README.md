@@ -5,13 +5,27 @@ SEI-Project 2 Web Application
 
 ## Application Images
 ### Planning
+<img width="735" alt="Project-2 ERD" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/441c5b8a-a775-4d9e-aba0-df2a00ba37ba">
+
+<img width="1430" alt="Project-2 trello Board" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/85a0b658-a4b0-4325-8fd9-de23dbcab6fd">
+
 ### Homepage
+<img width="1438" alt="Project-2 Homepage" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/9af24cb0-7ff1-4fc7-9539-1b24e2d2d394">
 ### Signup/Login
+
 ### Accessibility after login
+<img width="624" alt="OAuth Sign in" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/092edba1-d42c-44c3-b08b-1b9cfc17fb1b">
+
+<img width="1440" alt="Project-2 Home-Login" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/1dbe3e6d-bc76-48a3-bd99-9088f1c623f9">
+
+<img width="1432" alt="New-tip page" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/a4e1be85-83f9-4310-88a3-7e8893601a9c">
+
+<img width="1433" alt="Project-2 comment page " src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/181e06ee-1a87-4ccc-b0cb-70057b2010aa">
 
 ## Technologies
 
 ## Challenging Code
+<img width="1440" alt="Code Challenge " src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/6734e12e-9650-4cfd-9df8-ace6c4654c7c">
 
 ## Game Link
 
