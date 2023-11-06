@@ -35,5 +35,5 @@ const tipsSchema = new Schema(
   }
 );
 
-// Compile the schema into a model and export it
+// schema compiled into a model and exported
 module.exports = mongoose.model("Tip", tipsSchema);

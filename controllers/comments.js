@@ -4,21 +4,21 @@ module.exports = {
   create,
   delete: deleteComment,
   update: updateComment,
-  edit
+  edit,
 };
 
 async function create(req, res) {
   const tip = await Tip.findById(req.params.id);
 
-  // Add the user-centric info to req.body (the new review)
+  // Add the user-centric info to req.body (the new comment)
   req.body.user = req.user._id;
   req.body.userName = req.user.name;
   req.body.userAvatar = req.user.avatar;
 
-  // We can push (or unshift) subdocs into Mongoose arrays
+  // Push the new comment onto the tip's comments array
   tip.comments.push(req.body);
   try {
-    // Save any changes made to the movie doc
+    // Save any changes made to the tip doc
     await tip.save();
   } catch (err) {
     console.log(err);
@@ -27,7 +27,6 @@ async function create(req, res) {
 }
 
 async function deleteComment(req, res) {
-  // Note the cool "dot" syntax to query on the property of a subdoc
   const tip = await Tip.findOne({
     "comments._id": req.params.id,
     "comments.user": req.user._id,
@@ -36,7 +35,7 @@ async function deleteComment(req, res) {
   if (!tip) return res.redirect("/tips");
   // Remove the review using the remove method available on Mongoose arrays
   tip.comments.remove(req.params.id);
-  // Save the updated movie doc
+  // Save the updated tip doc
   await tip.save();
   // Redirect back to the movie's show view
   res.redirect(`/tips/${tip._id}`);
