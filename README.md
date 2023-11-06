@@ -1,11 +1,11 @@
-# Simone Green BeautyBook Discussion 
+# Simone Green BeautyBook Discussions 
 SEI-Project 2 Web Application
 
 ## Web Application Description 
 
-BeautyBook Discussion is where beauty enthusiasts connect, inspired by my cosmetics company and the shared passion for sharing beauty tips. Our goal is to build a supportive community of women who uplift each other. 
+BeautyBook Discussions is where beauty enthusiasts connect, inspired by my cosmetics company and the shared passion for sharing beauty tips. Our goal is to build a supportive community of women who uplift each other. 
 
-At BeautyBook Discussion, our primary objective is to foster a supportive community of women who encourage and motivate each other to embrace their full potential. Join our community by signing up today and engage in enriching discussions that celebrate the art of self-expression and empowerment. 
+At BeautyBook Discussions, our primary objective is to foster a supportive community of women who encourage and motivate each other to embrace their full potential. Join our community by signing up today and engage in enriching discussions that celebrate the art of self-expression and empowerment. 
 
 ## Application Images
 ### Planning
