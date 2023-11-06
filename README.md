@@ -36,7 +36,8 @@ At BeautyBook Discussions, our primary objective is to foster a supportive commu
 ## Challenging Code
 <img width="1440" alt="Code Challenge " src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/6734e12e-9650-4cfd-9df8-ace6c4654c7c">
 
-## Game Link
+## Web App Link
+https://simoneg80.github.io/BeautyBook-Discussions/
 
 ## Next Steps
 * Like Feauture 
