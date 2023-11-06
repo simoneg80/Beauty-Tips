@@ -4,7 +4,7 @@ SEI-Project 2 Web Application
 ## Game Description 
 
 ## Application Images
-
+### Planning
 ### Homepage
 ### Signup/Login
 ### Accessibility after login
