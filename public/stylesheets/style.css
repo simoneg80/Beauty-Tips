@@ -3,7 +3,6 @@
   font-family: open-sans;
   background-color: #f4efe4;
   color: #424748;
-
 }
 
 body {
@@ -12,7 +11,6 @@ body {
   display: grid;
   grid-template-rows: 50px 1fr;
   grid-template-areas: "nav";
-  
 }
 
 body > nav {
@@ -96,15 +94,14 @@ nav > a.active {
   cursor: default;
 }
 
+
 #new-form {
-  /* margin-top: 200px; */
+
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: auto;
   background-color: transparent; /* !!! change back to backgroun color if img does not work*/
-  
- 
 }
 
 #new-form *,
@@ -112,28 +109,24 @@ nav > a.active {
   font-size: 20px;
   padding: 5px;
   border-radius: 5px;
-  background-color: transparent; /* !!! change back to backgroun color if img does not work*/
-  
+  background-color: transparent; 
 }
-
-
 
 #new-form input[type="submit"] {
   margin-top: 50px;
   margin-left: auto;
   color: white;
   background-color: black;
-
 }
-/* !!! look into how to add img to page background*/
-.new-tip-pg {
-  margin-top: 200px;
+
+.newTipPg {
+  margin-top: 40px;
   background-image: url("/images/newformImg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0%;
- 
-} 
+}
+
 
 /* All Tips Table */
 
@@ -144,7 +137,6 @@ table {
   justify-content: center;
   align-items: center;
   width: 90vw;
-
 }
 
 #list {
@@ -152,12 +144,10 @@ table {
   text-align: center;
   justify-content: center;
   align-items: center;
-  
 }
 table thead th {
   padding: 5px;
   border-bottom: 5px solid #000000;
-  
 }
 
 #list td:nth-child(1),
@@ -169,7 +159,6 @@ table thead th {
   min-width: 100px;
   text-align: center;
 }
-
 
 #list a {
   border-radius: 4px;
@@ -184,13 +173,14 @@ table thead th {
   background-color: white;
 }
 
-td > a, button {
+td > a,
+button {
   border-radius: 4px;
   text-align: center;
   background-color: #000000;
   color: white;
   padding: 4px;
-  }
+}
 
 #form-delete {
   margin: 0;
@@ -199,7 +189,6 @@ td > a, button {
 #list button:hover {
   background-color: white;
 }
-
 
 #show-page {
   margin-top: 200px;
@@ -215,10 +204,9 @@ td > a, button {
   font-weight: bold;
 }
 
-
 #add-comment-form,
 #add-performer-form {
- display: inline-block;
+  display: inline-block;
   /*  grid-template-columns: auto auto;
   grid-gap: 1rem;
   margin-bottom: 2rem; */
@@ -317,8 +305,6 @@ button > .login {
   padding: 4px;
   text-decoration: none;
   font-size: 13.333px;
-
-
 }
 
 #editCmt-page {
@@ -328,8 +314,7 @@ button > .login {
   align-items: center;
   width: 50%;
   margin: auto;
-} 
-
+}
 
 #editCmt-page *,
 #add-comment-form * {
@@ -343,6 +328,4 @@ button > .login {
   margin-left: auto;
   color: white;
   background-color: black;
- 
 }
-
