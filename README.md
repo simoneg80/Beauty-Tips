@@ -44,6 +44,7 @@ https://simoneg80.github.io/BeautyBook-Discussions/
 * Enhanced styling and animations
 * Functionality to save comments or topics
 * Store feature
+* Responsive design
 
 ## The MIT License (MIT)
 Copyright (c) 2023 Simone Green
