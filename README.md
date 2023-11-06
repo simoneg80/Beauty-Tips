@@ -1,4 +1,4 @@
-# Simone Green BeautyBook Discussion Web Application
+# Simone Green BeautyBook Discussion 
 SEI-Project 2 Web Application
 
 ## Web Application Description 
