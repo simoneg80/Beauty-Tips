@@ -9,6 +9,10 @@ At BeautyBook Discussions, our primary objective is to foster a supportive commu
 
 ## Application Images
 ### Planning
+![TLShort](https://github.com/simoneg80/TaskLab-APP/assets/145403760/36e0c0c6-01b7-4cbd-963d-529fcba80b61)
+
+![TlLogo](https://github.com/simoneg80/TaskLab-APP/assets/145403760/d921116d-6ac5-4f62-984b-4bec6c4386ee)
+![TlLogo](https://github.com/simoneg80/TaskLab-APP/assets/145403760/4a127450-9192-413e-9ebf-5c0127461ecc)
 <img width="735" alt="Project-2 ERD" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/441c5b8a-a775-4d9e-aba0-df2a00ba37ba">
 
 <img width="1430" alt="Project-2 trello Board" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/85a0b658-a4b0-4325-8fd9-de23dbcab6fd">
