@@ -8,6 +8,7 @@ BeautyBook Discussions is where beauty enthusiasts connect, inspired by my cosme
 At BeautyBook Discussions, our primary objective is to foster a supportive community of women who encourage and motivate each other to embrace their full potential. Join our community by signing up today and engage in enriching discussions that celebrate the art of self-expression and empowerment. 
 
 ## Application Images
+
 ### Planning
 <img width="735" alt="Project-2 ERD" src="https://github.com/simoneg80/Beauty-Tips/assets/145403760/441c5b8a-a775-4d9e-aba0-df2a00ba37ba">
 
